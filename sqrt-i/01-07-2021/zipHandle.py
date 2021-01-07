@@ -12,12 +12,8 @@ def extract(path_to_zip,pswd):
 def recursivelyExtract(path_to_zip,pswdDic):
     try:
         infoList = checkZipInfo(path_to_zip)
-
-        if len(infoList) > 0:
-            filename = infoList[0].filename
-            extract(path_to_zip,pswdDic[path_to_zip.split("/")[-1][:-4]])
-            recursivelyExtract("01-07-2021/zipFiles/"+filename,pswdDic)
-        else:
-            print("fim do programa")
+        filename = infoList[0].filename
+        extract(path_to_zip,pswdDic[path_to_zip.split("/")[-1][:-4]])
+        recursivelyExtract("01-07-2021/zipFiles/"+filename,pswdDic)
     except zipfile.BadZipFile:
         print("flag encontrada")
