@@ -5,6 +5,6 @@ seguindo a descrição do desafio, ao pesquisar ballymote no google descobre-se 
 um livro no qual podemos perceber escritos parecido com o da imagem do desafio. Depois de investigar mais um pouco percebe-se que esses escritos estão em
 ogham, um alfabeto irlandes antigo.
 
-![alfabeto ogham](https://github.com/tom-xs/CTF_notes/blob/master/sqrt-i/08-01-2021/Alfabeto%20Celta.jpg)
+![alfabeto ogham](https://github.com/tom-xs/CTF_notes/blob/master/sqrt-i/08-01-2021/Alfabeto%20ogham.jpg)
 
 ![solução](https://github.com/tom-xs/CTF_notes/blob/master/sqrt-i/08-01-2021/crypto.jpg)
