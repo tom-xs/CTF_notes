@@ -1,4 +1,4 @@
-#breaking bad
+# breaking bad
 
 primeiramente eu precisei de uma lista com todos os nomes e apelidos dos personagens de breaking bad, pra isso fiz um http request para [ breaking bad API]( https://breakingbadapi.com) 
 e salvei o arquivo json contendo informações de todos os personagens, apos isso criei uma lista contendo o nome + apelido de cada personagem. Encryptei todos elementos desta lista 
