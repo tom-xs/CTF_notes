@@ -1,10 +1,5 @@
-# ballymote
-![challanges description](https://github.com/tom-xs/CTF_notes/blob/master/sqrt-i/08-01-2021/ballymote%20challenge.PNG)
+# esolang 
 
-seguindo a descrição do desafio, ao pesquisar ballymote no google descobre-se que esse é nomme esta presente no livro de ballymote, 
-um livro no qual podemos perceber escritos parecido com o da imagem do desafio. Depois de investigar mais um pouco percebe-se que esses escritos estão em
-ogham, um alfabeto irlandes antigo.
+![problema](https://github.com/tom-xs/CTF_notes/blob/master/sqrt-i/09-01-2021/esolang%20challenge.PNG)
 
-![alfabeto ogham](https://github.com/tom-xs/CTF_notes/blob/master/sqrt-i/08-01-2021/Alfabeto%20ogham.jpg)
-
-![solução](https://github.com/tom-xs/CTF_notes/blob/master/sqrt-i/08-01-2021/crypto.jpg)
+o arquivo anexado tem um texto sem sentido. Seguindo a dica dada pelo nome do desafio podemos deduzir que o texto esta ecrito numa linguagem que pertence a [este site](esolangs.org). Ao procurar no google pelas linguagens esolangs mais conhecidas encontramos [este link](https://ourcodeworld.com/articles/read/427/top-10-most-complex-and-bizarre-esoteric-programming-languages)e percebe-se que a liguagem que procuravamos era Malbolge. Usando o intepretador online conseguimos a flag.
