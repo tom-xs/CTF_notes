@@ -7,6 +7,10 @@ public class javavava {
         }
         char[] flagVarsBirds = new char[flagVars.length];
         int[] coolFinal = new int[flagVars.length];
+
+        int[] a_arr = new int[flagVars.length];
+        int[] i_arr = new int[flagVars.length];
+
         int count = 0;
         for (char c: flagVars) {
             int a = c;
@@ -16,6 +20,10 @@ public class javavava {
                 for (int i = 0; i < flag.length(); i++) {
                     char d = (char)((ind ^ 15) + (2 * a));
                     flagVarsBirds[i] = d;
+
+                    a_arr[count] = a;
+                    i_arr[count] = ind;
+
                 }
             } else {
                 System.out.println("that shouldn't have happened D:");
@@ -26,7 +34,7 @@ public class javavava {
                 if (fire == flagVarsBirds[i] && !ILikeRev) {
                     ILikeRev = true;
                 } else if (fire != flagVarsBirds[i]) {
-                    System.out.print(" " + fire);
+                    System.out.print(" "+fire);
                     fire = flagVarsBirds[i];
                     ILikeRev = false;
                 }
@@ -34,9 +42,13 @@ public class javavava {
             coolFinal[count] = fire;
             count++;
         }
+        System.out.println();
         for (int i = 0; i < flagVarsBirds.length; i++) {
-            System.out.print(coolFinal[i] + " ");
+            System.out.print((coolFinal[i]) + " ");
         }
+        System.out.println("");
+        System.out.println(printArr(a_arr));
+        System.out.println(printArr(i_arr));
         // 225 212 245 216 257 222 139 244 139 196 225 76 196 212 97 97 247 280 
     }
 
@@ -46,6 +58,11 @@ public static String printArr(int[] arr){
         s = s + i +",";
     }
     s = s+"]";
+    return s;
+}
+public static String reverse(int[] arr){
+    String s = new String("");
+
     return s;
 }
 }
