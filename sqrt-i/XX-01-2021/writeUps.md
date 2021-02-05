@@ -151,7 +151,7 @@ Note: The flag is ictf{plaintext_you_got}
 >
 >![](https://render.githubusercontent.com/render/math?math=n^2(\phi(n)-1)^2=x\rightarrow{n(\phi(n)-1)=\sqrt{x}}\rightarrow{\phi(n)=\frac{\sqrt{x}}{n}%2B1})
 >
->pode-se escrever um script para decriptar a mensagem agora que sabe-se o valor de **$\phi(n)$** (que com ele pode-se achar **d**) e então econtra-se a chave `ictf{nice_job_found_totient_AGAIN}`
+>pode-se escrever um script para decriptar a mensagem agora que sabe-se o valor de ![](https://render.githubusercontent.com/render/math?math=\phi(n)) (que com ele pode-se achar **d**) e então econtra-se a chave `ictf{nice_job_found_totient_AGAIN}`
 ---
 ### php-comparison2
 ##### Description
