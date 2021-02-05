@@ -111,23 +111,20 @@ Note: The flag is ictf{plaintext_you_got}
 >150
 ##### solução:
 >realizando os seguintes calculos:
->$n=pq$
->$\phi(n)=(p-1)(q-1)$
->$2pq-p-q=x$
 >
->$\begin{cases}
-pq-p-q+1=\phi(n) \\
-2pq-p-q-x=0\\
-\end{cases}
-\rightarrow{\begin{cases}
-pq-p-q+1=\phi(n) \\
--2pq+p+q+x=0\\
-\end{cases}
-}$
+>![](https://render.githubusercontent.com/render/math?math=n=pq)
 >
->$-pq+x+1=\phi(n) \rightarrow -n+x+1 = \phi(n)$
+>![](https://render.githubusercontent.com/render/math?math=\phi(n)=(p-1)(q-1))
 >
->pode-se escrever um script para decriptar a cifra agora que sabe-se o valor de **$\phi(n)$** (que com ele pode-se achar **d**) e então econtra-se a chave `ictf{subtract_n_then_use_simons_favorite_factoring_trick_to_find_totient!}`
+>![](https://render.githubusercontent.com/render/math?math=2pq-p-q=x)
+>___
+><img src="https://latex.codecogs.com/png.latex?\begin{cases}&space;pq-p-q&plus;1=\phi(n)&space;\\&space;2pq-p-q-x=0\\&space;\end{cases}&space;\rightarrow{\begin{cases}&space;pq-p-q&plus;1=\phi(n)&space;\\&space;-2pq&plus;p&plus;q&plus;x=0\\&space;\end{cases}&space;}" title="\begin{cases} pq-p-q+1=\phi(n) \\ 2pq-p-q-x=0\\ \end{cases} \rightarrow{\begin{cases} pq-p-q+1=\phi(n) \\ -2pq+p+q+x=0\\ \end{cases} }" />
+>
+>___
+>
+>![](https://render.githubusercontent.com/render/math?math=$-pq%2Bx%2B1=\phi(n)\rightarrow-n%2Bx%2B1=\phi(n)$)
+>
+>pode-se escrever um script para decriptar a cifra agora que sabe-se o valor de ![](https://render.githubusercontent.com/render/math?math=\phi(n)) (que com ele pode-se achar **d**) e então econtra-se a chave `ictf{subtract_n_then_use_simons_favorite_factoring_trick_to_find_totient!}`
 ---
 ### Weird RSA 2
 ##### Description
@@ -140,15 +137,19 @@ pq-p-q+1=\phi(n) \\
 >175
 ##### solução:
 >similar a weird rsa1, e resolvendo as equações:
->$\phi(n)=(p-1)(q-1)=pq-p-q+1\rightarrow{pq-p-q=\phi(n)-1}$
 >
->$p^4q^2(q-1)^2+p^2q^4-2p^3q^3(q-1)=x$
->$p^2q^2[p^2(q-1)^2+q^2-2pq(q-1)]=x$
->$p^2q^2[p(q-1)-q]^2=x\rightarrow{(pq)^2(pq-p-q)^2=x}\rightarrow{n^2(pq-p-q)^2=x}$
+>![](https://render.githubusercontent.com/render/math?math=\phi(n)=(p-1)(q-1)=pq-p-q%2B1\rightarrow{pq-p-q=\phi(n)-1})
+>___
+>![](https://render.githubusercontent.com/render/math?math=p^4q^2(q-1)^2%2Bp^2q^4-2p^3q^3(q-1)=x)
 >
->sabendendo que $pq-p-q=\phi(n)-1$ então:
 >
->$n^2(\phi(n)-1)^2=x\rightarrow{n(\phi(n)-1)=\sqrt{x}}\rightarrow{\phi(n)=\frac{\sqrt{x}}{n}+1}$
+>![](https://render.githubusercontent.com/render/math?math=p^2q^2[p^2(q-1)^2%2Bq^2-2pq(q-1)]=x)
+>
+>![](https://render.githubusercontent.com/render/math?math=p^2q^2[p(q-1)-q]^2=x\rightarrow{(pq)^2(pq-p-q)^2=x}\rightarrow{n^2(pq-p-q)^2=x})
+>___
+>sabendendo que ![](https://render.githubusercontent.com/render/math?math=pq-p-q=\phi(n)-1) então:
+>
+>![](https://render.githubusercontent.com/render/math?math=n^2(\phi(n)-1)^2=x\rightarrow{n(\phi(n)-1)=\sqrt{x}}\rightarrow{\phi(n)=\frac{\sqrt{x}}{n}%2B1})
 >
 >pode-se escrever um script para decriptar a mensagem agora que sabe-se o valor de **$\phi(n)$** (que com ele pode-se achar **d**) e então econtra-se a chave `ictf{nice_job_found_totient_AGAIN}`
 ---
