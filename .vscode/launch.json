@@ -5,18 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "Launch javavava",
-            "request": "launch",
-            "mainClass": "javavava",
-            "projectName": "CTF_notes_ce5ab948"
-        },
-        {
             "name": "Python: Arquivo Atual",
             "type": "python",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
-        }
+        },
     ]
 }
